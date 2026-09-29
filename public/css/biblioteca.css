@@ -1,22 +1,23 @@
-.estante{display:grid;grid-template-columns:repeat(auto-fill,minmax(170px,1fr));gap:26px 22px;padding-top:26px}
+body{margin:0;background:#f4f5f5;color:#13303a;font:16px/1.5 system-ui,sans-serif}
+.estante{display:grid;grid-template-columns:repeat(auto-fill,minmax(170px,1fr));gap:26px 22px;padding:26px 20px;max-width:1040px;margin:0 auto}
 .libro{display:flex;flex-direction:column}
-.portada{aspect-ratio:2/3;background:#1f4e5f;color:#fff;border-radius:3px 8px 8px 3px;
+.portada{aspect-ratio:2/3;position:relative;background:#1f4e5f;color:#fff;border-radius:3px 8px 8px 3px;
   box-shadow:inset 6px 0 0 rgba(0,0,0,.22),0 6px 10px rgba(0,0,0,.25);
   display:flex;align-items:flex-end;padding:14px 12px 14px 20px;
   font-family:Georgia,serif;font-weight:700;overflow:hidden}
-.portada img{width:100%;height:100%;object-fit:cover;margin:-14px -12px -14px -20px;width:calc(100% + 32px);height:calc(100% + 28px)}
+.portada img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
 .tabla-madera{height:12px;background:#8a6a4a;border-radius:2px;margin:-2px -8px 0;box-shadow:0 5px 8px rgba(0,0,0,.25)}
 .libro h3{font-family:Georgia,serif;font-size:1.05rem;margin:14px 0 2px}
 .meta{color:#5b6b70;font-size:.85rem;margin:0}
 .etiqueta{align-self:flex-start;margin-top:8px;border:1px solid #d8dddf;border-radius:999px;padding:1px 10px;font-size:.78rem;background:#fff}
 .acciones{display:flex;gap:8px;margin-top:12px}
 .acciones form{flex:1;margin:0}
-.btn{display:inline-block;width:100%;text-align:center;padding:6px 8px;font-size:.85rem;border-radius:6px;
+.btn{display:inline-block;width:100%;box-sizing:border-box;text-align:center;padding:6px 8px;font-size:.85rem;border-radius:6px;
   border:1px solid #d8dddf;background:transparent;color:#13303a;cursor:pointer;text-decoration:none}
 .acciones > a.btn{flex:1}
 .btn-editar{background:#13303a;color:#fff;border-color:#13303a}
 .btn-eliminar{color:#a32a2a;border-color:#a32a2a}
 .btn-eliminar:hover{background:#a32a2a;color:#fff}
-.aviso{background:#e8f1ee;border:1px solid #b9d3cb;padding:10px 14px;border-radius:6px}
+.aviso{background:#e8f1ee;border:1px solid #b9d3cb;padding:10px 14px;border-radius:6px;max-width:1040px;margin:16px auto}
 .formulario{max-width:440px;margin:40px auto;display:grid;gap:12px}
-.formulario input,.formulario select{width:100%;padding:9px 10px;border:1px solid #d8dddf;border-radius:6px}
+.formulario input,.formulario select{width:100%;box-sizing:border-box;padding:9px 10px;border:1px solid #d8dddf;border-radius:6px}
